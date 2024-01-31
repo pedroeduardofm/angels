@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angel Cosmetics</title>
-    <link rel="icon" href="img/logoACicon.png" type="image/x-icon">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <nav class="header_navigation">
             <div class="logo">
                 <img src="img/logoACpng2.png" alt="Logo Angel">
@@ -27,7 +29,7 @@
 
             <ul>
                 <li id="start">
-                    <a href="">
+                    <a href="#">
                         <span>HOME</span>
                     </a>
                 </li>
@@ -53,57 +55,68 @@
     <div class="content" id="PRODUTOS">
         <section class="itens_content">
 
-            <div class="block_item" onclick="openModal('RÍMEL MARYKAY', 'A Lash Intensity garante para seus cílios um visual forte, com impacto e até 200% mais volume!', 'img/itens/passarnoolho.svg')">
-                <img src="img/itens/passarnoolho.svg" alt="Rímel MaryKay">
-                <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
+            <div class="block_item" onclick="openModal('Antitranspirante Roll-on Cuide-se Bem Invisible Protect 55ml', 'OBoticário', 'O Antitranspirante Roll-on Cuide-se Bem Invisible Protect entrega proteção, praticidade e cuidados prolongados para suas axilas.', '$19.90', 'img/itens/cuidese1.jpeg', antitranspiranteItems)">
+                <img src="img/itens/cuidese1.jpeg" alt="Antitranspirante OBoticário">
+                <p>Antitranspirante Roll-on OBoticário Cuide-se Bem</p>
             </div>
-    
-            <div class="block_item" onclick="openModal('BATOM OBOTICARIO', 'Batom preenchedor com acabamento cremoso. o Boticário Make B. Hyaluronic cores incríveis e fórmula inteligente, que atua diretamente no preenchimento dos vincos labiais.', 'img/itens/batom.svg')">
-                <img src="img/itens/batom.svg" alt="Batom Oboticario">
-                <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
+
+            <div class="block_item"
+                onclick="openModal('Desodorante Antitranspirante Roll-On Kaiak Masculino','Natura', 'Desodorante roll-on com ação antitranspirante de alta performance, garante 48h de proteção contra os efeitos do suor.','$27.90', 'img/itens/kaiak.jpeg')">
+                <img src="img/itens/kaiak.jpeg" alt="Desodorante Kaiak">
+                <p>Desodorante Antitranspirante Roll-On Kaiak Masculino</p>
             </div>
-    
-            <figure class="block_item">
-                <img src="img/itens/passarnoolho.svg" alt="Rímel MaryKay">
-                <figcaption>
-                    <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
-                    <button>COMPRAR</button>
-                </figcaption>
-            </figure>
 
-            <figure class="block_item">
-                <img src="img/itens/passarnoolho.svg" alt="Rímel MaryKay">
-                <figcaption>
-                    <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
-                    <button>COMPRAR</button>
-                </figcaption>
-            </figure>
+            <div class="block_item" onclick="openModal('Sabonete em Barra Puro Vegetal Tododia Macadâmia','Natura', 'Promove uma sensação agradável, enquanto limpa e deixa a pele macia e nutrida. Sua fórmula suave e com ingredientes naturais evita o ressecamento e prepara a pele para receber a combinação nutritiva e inteligente dos hidratantes Natura Tododia.','$29,90', 'img/itens/tododia1.jpeg', clickableImages)">
+                <img src="img/itens/tododia1.jpeg" alt="Tododia Macadâmia">
+                <p>Sabonete em Barra Puro Vegetal Tododia Macadâmia</p>
+            </div>
 
-            <figure class="block_item">
-                <img src="img/itens/passarnoolho.svg" alt="Rímel MaryKay">
-                <figcaption>
-                    <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
-                    <button>COMPRAR</button>
-                </figcaption>
-            </figure>
+            <div class="block_item"
+                onclick="openModal('Desodorante Antitranspirante em Creme Erva Doce','Natura', 'O Desodorante em Creme Erva Doce conta com fórmula exclusiva que garante proteção para as axilas por 48 horas sem deixar manchas nas roupas. Além de perfumar a pele, prolonga a sensação de pós-banho, sempre com agradável fragrância e frescor. Perfeito para o seu dia a dia.','$27.90', 'img/itens/desodorante.jpeg')">
+                <img src="img/itens/desodorante.jpeg" alt="Desodorante Natura">
+                <p>Desodorante Antitranspirante em Creme Erva Doce</p>
+            </div>
 
-            <figure class="block_item">
-                <img src="img/itens/passarnoolho.svg" alt="Rímel MaryKay">
-                <figcaption>
-                    <p>Rímel MaryKay com sobretudo que deixa a sobrancelha com nível profissional.</p>
-                    <button>COMPRAR</button>
-                </figcaption>
-            </figure>
+            <div class="block_item"
+                onclick="openModal('Água de colônia Natura Mamãe e Bebê sem Alcool','Natura', 'Cheirinho de bebê, amor, carinho e cuidado.Fórmula 100% segura para ser usada desde o primeiro dia de vida, testada e aprovada por pediatras. Com perfumação suave, sem álcool para não agredir a pele sensível e delicada do bebê.','$99,90', 'img/itens/mamaebebe.jpeg')">
+                <img src="img/itens/mamaebebe.jpeg" alt="Natura Mamãe e Bebê">
+                <p>Água de colônia Natura Mamãe e Bebê sem Alcool</p>
+            </div>
+
+            <div class="block_item"
+                onclick="openModal('Sabonete Em Barra Cuide-se Bem Beijinho','OBoticário', 'Ao entrar em contato com a pele úmida, o Cuide-se Bem Beijinho Sabonete Barra cria uma espuma cremosa que limpa sem ressecar a pele. Sua fragrância floral é surpreendente e irresistível, tornando o momento do banho ainda mais especial. São duas unidades do sabonete em barra para você sentir na pele todos os benefícios. Garante uma pele macia e perfumada já no banho!','$34,90', 'img/itens/cuidesedife.jpeg')">
+                <img src="img/itens/cuidesedife.jpeg" alt="Sabonete Em Barra OBoticário">
+                <p>Sabonete Em Barra Cuide-se Bem Beijinho</p>
+            </div>
+
+            <div class="block_item"
+                onclick="openModal('Óleo Corporal Sève Amêndoas Doces','Natura', 'Enriquecido com óleo de amêndoas, Sève Amêndoas Doces realça o brilho natural da pele, deixando-a macia e hidratada o dia todo. Sua formulação exclusiva possui 100% óleos vegetais e protege o corpo inteiro, deixando uma fragrância sensual e misteriosa, repleta de feminilidade.','$68,90', 'img/itens/seve.jpeg')">
+                <img src="img/itens/seve.jpeg" alt="Óleo Corporal Amêndoas Doces">
+                <p>Óleo Corporal Sève Amêndoas Doces</p>
+            </div>
+
         </section>
-    </div>    
+    </div>
+
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <img id="modalImage" src="" alt="">
-            <p id="modalDescription"></p>
-            <button class="btn_modal">TENHO INTERESSE</button>
+            <div class="modal-body">
+                <div class="left-column">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="right-column">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-title">
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalBrand"></p>
+                    </div>
+                    <p id="modalDescription"></p>
+                    <div id="img-container" class="img-container"></div>
+                    <p id="modalPrice"></p>
+                    <a href="javascript:void(0);" id="interesseButton" class="modal-button">TENHO INTERESSE</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -117,22 +130,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/angeelcosmetics_?igsh=MWZqdTNoc2FyYnptMg==" target="_blank" title="Instagram">
+                    <a href="https://www.instagram.com/angeelcosmetics_?igsh=MWZqdTNoc2FyYnptMg==" target="_blank"
+                        title="Instagram">
                         <i class="fab fa-instagram inst"></i> Instagram
                     </a>
                 </li>
                 <li>
-                    <a href="" title="Email"> 
+                    <a href="" title="Email">
                         <i class="far fa-envelope email"></i> Email
                     </a>
                 </li>
             </ul>
             <button id="btnScrollToTop" class="back-to-top-button" onclick="scrollToTop()">
-                <i class="fas fa-arrow-up"></i> 
+                <i class="fas fa-arrow-up"></i>
             </button>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
+    <script src="script.js"></script>
 </html>
